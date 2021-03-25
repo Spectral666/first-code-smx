@@ -1,0 +1,116 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Reglas asociadas a las columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+    color: #fff;
+}
+
+.column-1 h2{
+    font-weight: 100;
+}
+
+.section-2 {
+    background-color: #509ea0;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    padding: 40px;
+}
+
+.section-3{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .contenedor .column-2{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.map {
+    width: 100%;
+}
+
+.section-4{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.section-4 .column-2 p{
+    color: #fff;
+    font-size: 23px;
+}
+
+.column-4{
+    width: 25%;
+    float: left;
+}
+
+.column-4 p{
+    color: #fff;
+}
+
+/* Estilos de la página */
+
+header {
+    text-align: center;
+    background-image: url('../img/pexels-mateusz-dach-450035.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30vh 100px;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+header h2 {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Aquí dentro van las reglas */
+    header h1 {
+        font-size: 50px;
+    }
+    header h2 {
+        font-size: 30px;
+    }
+    header {
+        padding: 30vh 10px;
+    }
+}
+
+
+
